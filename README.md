@@ -31,15 +31,25 @@ The dataset contains both numerical and categorical medical features:
 
 ### Project structure
 project/
+
 │
+
 ├── feature_engineering.py     # Feature generation and processing
+
 ├── app.py                     # FastAPI backend
+
 ├── streamlit_app.py           # Streamlit interface
+
 │
+
 ├── model.joblib               # The trained model
+
 ├── artifacts.joblib           # Preprocessing, encoders, etc.
+
 ├── features.joblib            # List of used features
+
 │
+
 └── README.md
 
 ### Machine learning models
@@ -123,13 +133,23 @@ It allows you to:
 
 ### Pipeline inference
 User Input
+
       ↓
+      
 Streamlit UI
+
       ↓
+      
 FastAPI endpoint
+
       ↓
+      
 feature_engineering.py
+
       ↓
+      
 model.joblib
+
       ↓
+      
 The probability of disease
